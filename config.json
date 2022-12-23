@@ -1,9 +1,9 @@
 {"app_id": "wxe52bd4f8737c5e60", 
  "app_secret": "5adc598cbc7167f98e802f431b09ebe8", 
- "template_id": "am6xYJHAFjK5OlNnP36UKU0uDjb00FlSXB5PB3HMX3I", 
- "user": ["", "owDKp5nXO20kXoDgcjmAaDfndtkQ"], 
- "province": "\u5b89\u5fbd", 
- "city": "\u961c\u9633",  
+ "template_id": "9iA2NOvg-Lf2BQv26tZ02a_UrfRCFgKUK6DJ18hU4aI", 
+ "user": ["owDKp5lCSwXua796BLNLTvj_rGJU", "owDKp5nXO20kXoDgcjmAaDfndtkQ"], 
+ "province": "\u5b89\u5fbd",       #浙江：\u6d59\u6c5f    安徽：\u5b89\u5fbd
+ "city": "\u961c\u9633",           #杭州：\u676d\u5dde    阜阳：\u961c\u9633
  "birthday1": "r2002-09-07", 
  "birthday2": "2023-01-03", 
  "birthday3": "1997-01-03", 
