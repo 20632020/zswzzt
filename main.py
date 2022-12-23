@@ -241,12 +241,12 @@ def send_message(to_user, access_token, city_name, weather, max_temperature, min
                 "value": weather,
                 "color": get_color()
             },
-            "min_temperature": {
-                "value": min_temperature,
+            "lowest": {
+                "value": lowest,
                 "color": get_color()
             },
-            "max_temperature": {
-                "value": max_temperature,
+            "highest": {
+                "value": highest,
                 "color": get_color()
             },
             "love_day": {
@@ -335,7 +335,7 @@ if __name__ == "__main__":
     users = config["user"]
     # 传入省份和市获取天气信息
     province, city = config["province"], config["city"]
-    weather, max_temperature, min_temperature = get_weather(province, city)
+    weather, highest, lowest = get_weather(province, city)
     #获取天行API
     tianxing_API=config["tianxing_API"]
     #是否开启天气预报API
@@ -366,7 +366,7 @@ if __name__ == "__main__":
     lucky_ = lucky()
     # 公众号推送消息
     for user in users:
-        send_message(user, accessToken, city, weather, max_temperature, min_temperature, pipi, lizhi,pop,tips, note_en, note_ch, health_tip, lucky_)
+        send_message(user, accessToken, city, weather, highest, lowest, pipi, lizhi,pop,tips, note_en, note_ch, health_tip, lucky_)
     import time
     time_duration = 3.5
     time.sleep(time_duration)
