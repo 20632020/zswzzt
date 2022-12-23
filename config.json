@@ -15,12 +15,5 @@
  "Whether_health": false, 
  "Whether_lucky": false, 
  "tianxing_API": "74ac714f06d37c2f451caa919aac2e2e", 
- "astro": ""}
-/*
-安徽阜阳：
- "province": "\u5b89\u5fbd", 
- "city": "\u961c\u9633",  
- 浙江杭州：
-"province": "\u6d59\u6c5f", 
- "city": "\u676d\u5dde", 
-*/
+ "astro": ""
+}
