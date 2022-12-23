@@ -197,7 +197,7 @@ def tip():
             data = res.read()
             data = json.loads(data)
             pop = data["newslist"][0]["pop"]+"%"
-            return tips
+            return pop,tips
         except:
             return ("天气预报API调取错误，请检查API是否正确申请或是否填写正确"),""
 
@@ -358,14 +358,14 @@ if __name__ == "__main__":
     #健康小提示
     health_tip = health()
     #建议
-    tips = tip()
+    pop,tips = tip()
     #励志名言
     lizhi = lizhi()
     #星座运势
     lucky_ = lucky()
     # 公众号推送消息
     for user in users:
-        send_message(user, accessToken, city, weather, max_temperature, min_temperature, pipi, lizhi,tips, note_en, note_ch, health_tip, lucky_)
+        send_message(user, accessToken, city, weather, max_temperature, min_temperature, pipi, lizhi,pop,tips, note_en, note_ch, health_tip, lucky_)
     import time
     time_duration = 3.5
     time.sleep(time_duration)
