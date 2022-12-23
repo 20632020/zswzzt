@@ -94,10 +94,10 @@ def get_weather(province, city):
     # 天气
     weather = weatherinfo["weather"]
     # 最高气温
-    highest = weatherinfo["highest"]
+    temp = weatherinfo["temp"]
     # 最低气温
-    lowest = weatherinfo["lowest"]
-    return weather, highest, lowest
+    tempn = weatherinfo["tempn"]
+    return weather, temp, tempn
 
 
 
